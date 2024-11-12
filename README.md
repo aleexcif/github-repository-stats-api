@@ -9,14 +9,10 @@ A RESTful API built with `TypeScript`, `Node.js`, and `SQLite` to track and retr
 - Update repository stats periodically with `node-cron`
 - Endpoints for adding, retrieving, and deleting tracked repositories
 
----
-
 ## Prerequisites
 
 - **`Node.js`** v14 or higher
 - **GitHub Personal Access Token** (optional, if you need higher API rate limits)
-
----
 
 ## Installation
 
@@ -44,8 +40,6 @@ A RESTful API built with `TypeScript`, `Node.js`, and `SQLite` to track and retr
      npx tsc
      node dist/app.js
      ```
-
----
 
 ## Usage
 
