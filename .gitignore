@@ -1,0 +1,35 @@
+# Node modules
+node_modules/
+
+# Compiled output
+dist/
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional VSCode workspace settings
+.vscode/
+
+# SQLite database files
+data/*.db
+data/*.sqlite
+*.sqlite-journal
+
+# MacOS Finder and other system files
+._*
+.Spotlight-V100
+.Trashes
