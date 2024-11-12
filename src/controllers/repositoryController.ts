@@ -44,3 +44,12 @@ export function deleteRepository(req: Request, res: Response) {
         res.status(500).json({ message: 'Failed to delete repository', error: (error as Error).message });
     }
 }
+
+export function getAllRepositories(req: Request, res: Response) {
+    try {
+        const repositories = repositoryModel.getAllRepositories();
+        res.json(repositories);
+    } catch (error) {
+        res.status(500).json({ message: 'Failed to retrieve repositories', error: (error as Error).message });
+    }
+}

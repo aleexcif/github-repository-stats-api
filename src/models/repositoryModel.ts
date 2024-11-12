@@ -36,3 +36,9 @@ export function deleteRepository(id: number): void {
     `);
     stmt.run(id);
 }
+
+// Retrieve all repositories
+export function getAllRepositories(): Repository[] {
+    const stmt = db.prepare('SELECT * FROM repositories');
+    return stmt.all() as Repository[];
+}
