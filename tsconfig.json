@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                      // Target modern JavaScript (ES6) for async/await support
+    "module": "CommonJS",                 // CommonJS for Node.js compatibility
+    "strict": true,                       // Enable strict type-checking
+    "esModuleInterop": true,              // Allow import/export syntax for compatibility with CommonJS modules
+    "skipLibCheck": true,                 // Skip type checking for library declaration files
+    "forceConsistentCasingInFileNames": true, // Enforce consistent file name casing
+    "outDir": "./dist",                   // Output compiled JavaScript files to the "dist" directory
+    "rootDir": "./src",                   // Source files are located in the "src" directory
+    "moduleResolution": "node",           // Node-style module resolution
+    "resolveJsonModule": true,            // Allow importing JSON files as modules
+    "typeRoots": ["./node_modules/@types"], // Define types directory
+    "lib": ["ES6"]                        // Include ES6 lib for modern features
+  },
+  "include": ["src"],                     // Include the "src" directory in the compilation
+  "exclude": ["node_modules", "dist"]     // Exclude the "node_modules" and "dist" directories
+}
