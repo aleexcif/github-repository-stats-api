@@ -54,7 +54,7 @@ A RESTful API built with `TypeScript`, `Node.js`, and `SQLite` to track and retr
        -H "Content-Type: application/json" \
        -d '{"owner": "ownerName", "name": "repositoryName"}'
      ```
-   - Expected Response:
+   - Example Response:
      ```json
      {
        "message": "Repository added successfully",
@@ -74,11 +74,9 @@ A RESTful API built with `TypeScript`, `Node.js`, and `SQLite` to track and retr
    - URL: `http://localhost:3000/api/repositories`
    - curl Command:
      ```zsh
-     curl -X POST http://localhost:3000/api/repositories \
-       -H "Content-Type: application/json" \
-       -d '{"owner": "ownerName", "name": "repositoryName"}'
+     curl -X POST http://localhost:3000/api/repositories
      ```
-   - Response:
+   - Example Response:
      ```json
      [
        {
@@ -103,7 +101,7 @@ A RESTful API built with `TypeScript`, `Node.js`, and `SQLite` to track and retr
      ```zsh
      curl -X GET http://localhost:3000/api/repositories/1
      ```
-   - Response:
+   - Example Response:
      ```json
      {
        "id": 1,
@@ -125,7 +123,7 @@ A RESTful API built with `TypeScript`, `Node.js`, and `SQLite` to track and retr
      ```zsh
      curl -X DELETE http://localhost:3000/api/repositories/1
      ```
-   - Response:
+   - Example Response:
      ```json
      {
        "message": "Repository deleted successfully"
