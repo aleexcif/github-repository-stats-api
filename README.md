@@ -119,14 +119,7 @@ A RESTful API built with `TypeScript`, `Node.js`, and `SQLite` to track and retr
      }
      ```
 
----
-
-## Additional Notes
-
-This should provide a clear overview and easy-to-follow instructions for anyone interested in using this API. Let me know if you’d like me to clarify any sections further!
-
----
-
-## License
-
-_This project is licensed under the MIT License. See the LICENSE file for details._
+> [!NOTE]
+> This should provide a clear overview and easy-to-follow instructions for anyone interested in using this API. Let me know if you’d like me to clarify any sections further!
+>
+> This project is licensed under the MIT License. See the [LICENSE](https://github.com/aleexcif/github-repository-stats-api/blob/main/LICENSE) file for details.
