@@ -33,20 +33,20 @@ cd github-repo-stats-api
 npm init -y
 ```
 
-1. Install dependencies:
+2. Install dependencies:
 
 ```bash
 npm install express axios sqlite3 node-cron
 npm install --save-dev typescript @types/express ts-node nodemon
 ```
 
-1. Set up TypeScript configuration:
+3. Set up TypeScript configuration:
 
 ```bash
 npx tsc --init
 ```
 
-1. Create the folder structure:
+4. Create the folder structure:
 
 ```
 ├── src
@@ -76,7 +76,7 @@ interface Repository {
 export default Repository;
 ```
 
-1. Set up the database connection and create a repositories table to store tracked repositories.
+2. Set up the database connection and create a repositories table to store tracked repositories.
 
 ### Step 3: Build the Core Routes
 
@@ -112,8 +112,8 @@ export async function fetchRepositoryStats(owner: string, name: string) {
 
 ### Step 5: Add the Controller Logic
 
-1. Create controllers in `src/controllers/repositoryController.ts` to handle the logic for each endpoint.
-2. Example for adding a repository:
+2. Create controllers in `src/controllers/repositoryController.ts` to handle the logic for each endpoint.
+3. Example for adding a repository:
 
 ```tsx
 import { Request, Response } from "express";
