@@ -17,12 +17,12 @@ A RESTful API built with `TypeScript`, `Node.js`, and `SQLite` to track and retr
 ## Installation
 
 1. **Clone the Repository**:
-   ```bash
+   ```zsh
    git clone https://github.com/aleexcif/github-repository-stats-api.git
    cd github-repository-stats-api
    ```
 2. **Install Dependencies**:
-   ```bash
+   ```zsh
    npm install
    ```
 3. **Set Up Environment Variables**:
@@ -32,11 +32,11 @@ A RESTful API built with `TypeScript`, `Node.js`, and `SQLite` to track and retr
      ```
 4. **Start the Server**:
    - In development with auto-restart:
-     ```bash
+     ```zsh
      npx ts-node-dev --respawn src/app.ts
      ```
    - In production (compile TypeScript and run `Node.js`):
-     ```bash
+     ```zsh
      npx tsc
      node dist/app.js
      ```
@@ -45,17 +45,16 @@ A RESTful API built with `TypeScript`, `Node.js`, and `SQLite` to track and retr
 
 ### Endpoints
 
-1. **Add a Repository to Track Request**:
+1. **Add a Repository to Track**:
    - Method: `POST`
    - URL: `http://localhost:3000/api/repositories`
-   - Body:
-     ```json
-     {
-       "owner": "ownerName",
-       "name": "repositoryName"
-     }
+   - curl Command:
+     ```zsh
+     curl -X POST http://localhost:3000/api/repositories \
+       -H "Content-Type: application/json" \
+       -d '{"owner": "ownerName", "name": "repositoryName"}'
      ```
-   - Response:
+   - Expected Response:
      ```json
      {
        "message": "Repository added successfully",
@@ -67,9 +66,18 @@ A RESTful API built with `TypeScript`, `Node.js`, and `SQLite` to track and retr
        }
      }
      ```
+
+<br>
+
 2. **Retrieve All Tracked Repositories**:
    - Method: `GET`
    - URL: `http://localhost:3000/api/repositories`
+   - curl Command:
+     ```zsh
+     curl -X POST http://localhost:3000/api/repositories \
+       -H "Content-Type: application/json" \
+       -d '{"owner": "ownerName", "name": "repositoryName"}'
+     ```
    - Response:
      ```json
      [
@@ -85,9 +93,16 @@ A RESTful API built with `TypeScript`, `Node.js`, and `SQLite` to track and retr
        ...
      ]
      ```
+
+<br>
+
 3. **Retrieve Stats for a Specific Repository**
    - Method: `GET`
    - URL: `http://localhost:3000/api/repositories/{id}`
+   - curl Command:
+     ```zsh
+     curl -X GET http://localhost:3000/api/repositories/1
+     ```
    - Response:
      ```json
      {
@@ -100,15 +115,28 @@ A RESTful API built with `TypeScript`, `Node.js`, and `SQLite` to track and retr
        "lastUpdated": "2024-11-12T08:09:18.417Z"
      }
      ```
+
+<br>
+
 4. **Delete a Repository**
    - Method: `DELETE`
    - URL: `http://localhost:3000/api/repositories/{id}`
+   - curl Command:
+     ```zsh
+     curl -X DELETE http://localhost:3000/api/repositories/1
+     ```
    - Response:
      ```json
      {
        "message": "Repository deleted successfully"
      }
      ```
+
+<br>
+
+---
+
+<br>
 
 > [!NOTE]
 > This should provide a clear overview and easy-to-follow instructions for anyone interested in using this API. Let me know if you’d like me to clarify any sections further!
