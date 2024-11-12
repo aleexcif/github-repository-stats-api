@@ -68,7 +68,6 @@ A RESTful API built with `TypeScript`, `Node.js`, and `SQLite` to track and retr
      }
      ```
 2. **Retrieve All Tracked Repositories**:
-   - Request:
    - Method: `GET`
    - URL: `http://localhost:3000/api/repositories`
    - Response:
@@ -87,7 +86,6 @@ A RESTful API built with `TypeScript`, `Node.js`, and `SQLite` to track and retr
      ]
      ```
 3. **Retrieve Stats for a Specific Repository**
-   - Request:
    - Method: `GET`
    - URL: `http://localhost:3000/api/repositories/{id}`
    - Response:
@@ -103,7 +101,6 @@ A RESTful API built with `TypeScript`, `Node.js`, and `SQLite` to track and retr
      }
      ```
 4. **Delete a Repository**
-   - Request:
    - Method: `DELETE`
    - URL: `http://localhost:3000/api/repositories/{id}`
    - Response:
